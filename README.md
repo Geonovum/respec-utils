@@ -52,11 +52,10 @@ $hubSecret = 'My secret';
 ?>
 ```
 
-
 For a ReSpec document to be published, the following has to be done:
 1. make sure the ReSpec document has it's own GitHub repository
 1. the (root) ReSpec document shall be named ```index.html```
 1. a webhook to the proper PHP page is created, for events of type ```release```
 1. to publish:
-  1. create a new release (via Github)
-  1. make sure that the tagname of the release is identical to the last part of the "This version" URL. E.g. (TODO)
+  1. create a new release (via Github's website)
+  1. make sure that the tagname of the release is identical to the last part of the "This version" URL. E.g. ```cv-im-imvg-20180718```

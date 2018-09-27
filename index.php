@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Geonovum specificaties</title>
     <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
-    <!-- TODO: to external doc -->
+    <!-- TODO: css to external doc and/or use geonovum css file -->
     <style>
     body {
       font-family: Verdana, sans-serif;
@@ -35,6 +35,8 @@ Op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a>
 <?php
 // directories to be ignored. Uppercase
 $ignoreList = ['BRO', 'NWBBGT', '.GIT'];
+
+// directories for which all files should be shown (containing PDFs instead of ReSpec docs)
 $publishAllList = ['G4W', 'KL', 'MIM', 'OOV','RO','SERV'];
 
 function startsWith($haystack, $needle)
@@ -68,7 +70,6 @@ foreach ($pubDomains as $pubDomain) {
             if ($subdir === '.' or $subdir === '..') continue;
             echo "<ul>";
             if (is_dir($lookintodir . "/" . $subdir)) {
-                // find the type of doc
                 // TODO: order on types. If no def-, ... ..., then it could be a basedir
                 $docType="Laatste versie";
                 $cls="final";
@@ -88,14 +89,6 @@ foreach ($pubDomains as $pubDomain) {
             }
             echo "</ul>";
         }
-        // if (count($lastVersion) > 0) {
-        //   echo "<ul>";
-        //   for($l = 0; $l < count($lastVersion); $l++) {
-        //       echo $lastVersion[$l];
-        //       echo "<li><span class='".$cls."'><a href='".$lookintodir . "/" . $subdir."'>".$docType." (".$subdir.")</a></span></li>";
-        //   }
-        //   echo "</ul>";
-        // }
     }
 }
 ?>
