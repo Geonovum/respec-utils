@@ -1,13 +1,13 @@
 {
-  Geonovum: [{
-      repoName: "NEN3610-Linkeddata",
-      pubDomain: "nen3610"
+  "Geonovum": [{
+      "repoName": "NEN3610-Linkeddata",
+      "pubDomain": "nen3610"
   },{
-      repoName: "whitepaper-standaarden",
-      pubDomain: "wpgs"
+      "repoName": "whitepaper-standaarden",
+      "pubDomain": "wpgs"
   }],
-  thijsbrentjens: [{
-      repoName: "wfs-storedqueries",
-      pubDomain: "wfs-sq"
+  "thijsbrentjens": [{
+      "repoName": "wfs-storedqueries",
+      "pubDomain": "wfs-sq"
   }]
 }
