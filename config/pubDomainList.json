@@ -1,13 +1,16 @@
 {
   "Geonovum": [{
       "repoName": "NEN3610-Linkeddata",
-      "pubDomain": "nen3610"
+      "pubDomain": "nen3610",
+      "shortName": "nldp"
   },{
       "repoName": "whitepaper-standaarden",
-      "pubDomain": "wpgs"
+      "pubDomain": "wp",
+      "shortName": "wpgs"
   }],
   "thijsbrentjens": [{
       "repoName": "wfs-storedqueries",
-      "pubDomain": "wfs-sq"
+      "pubDomain": "wfs",
+      "shortName": "wfs-sq"
   }]
 }
