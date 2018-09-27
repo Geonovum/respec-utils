@@ -1,0 +1,15 @@
+{
+  // the name of the organisation repo on Github
+  Geonovum:[{
+     // the Github repository
+      repoName : "NEN3610-Linkeddata",
+      pubDomain: "nen3610" // the pubDomain as in the ReSpec config
+  },{
+      repoName: "whitepaper-standaarden",
+      pubDomain : "wpgs" // the pubDomain as in the ReSpec config
+  }],
+  thijsbrentjens : [{
+      repoName: "wfs-storedqueries", // the Github name of the repo
+      pubDomain: "wfs-sq" // the pubDomain as in the ReSpec config
+  }]
+}
