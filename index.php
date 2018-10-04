@@ -8,30 +8,60 @@
     <!-- TODO: css to external doc and/or use geonovum css file -->
     <style>
     body {
-      font-family: Verdana, sans-serif;
+      line-height: 1.5;
+
+      font-family: sans-serif;
+
+      color: black;
+
+      width: 70rem;
+
+      margin-left: auto;
+
+      margin-right: auto;
+
+      font-size: 0.8rem;
+
+      margin-top: 2rem;
+    }
+    
+    h1, h2 {
+      color: #005a9c;
+    }
+    h1 {
+      font-weight: bold;
+      margin: 0 0 .1em;
+      font-size: 220%;
+    }
+    h2 {
+      font-size: 140%;
+    }
+    a {
+      color: #005a9c;
     }
     span.final, span.final a {
       font-weight: normal;
-      color: black;
+      color: #005a9c;
     }
     span.def, span.def a {
-      color: blue;
-      font-size: 0.85em;
+      color: #005a9c;
+      /*font-size: 0.85em;*/
     }
     span.cv, span.cv a {
       color: orange;
-      font-size: 0.85em;
+      /*font-size: 0.85em;*/
     }
     span.vv, span.vv a {
       color: green;
-      font-size: 0.85em;
+      /*font-size: 0.85em;*/
     }
     </style>
   </head>
 <body>
-<h1>Geonovum specificaties</h1>
-Op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a> zijn technische documenten te vinden die Geonovum publiceert. Onderstaande documenten zijn op dit moment beschikbaar:
-<ul>
+<h1><img class="block-sitebranding__logo" src="https://www.geonovum.nl/logo.svg" alt="Home"> Standaarden en technische documenten</h1>
+Op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a> zijn standaarden en technische documenten te vinden die Geonovum publiceert. Onderstaande documenten zijn op dit moment beschikbaar:
+<!-- <ul> -->
+
 <?php
 // directories to be ignored. Uppercase
 $ignoreList = ['BRO', 'NWBBGT', '.GIT'];
@@ -61,14 +91,14 @@ $pubDomains = scandir($path);
 foreach ($pubDomains as $pubDomain) {
     if ($pubDomain === '.' or $pubDomain === '..') continue;
     if (is_dir($path . '/' . $pubDomain) and !in_array(strtoupper($pubDomain), $ignoreList)) {
-        echo "<li><a href='".$pubDomain."'>".strtoupper($pubDomain)."</a></li>";
+        echo "<h2><a href='".$pubDomain."'>".strtoupper($pubDomain)."</a></h2>";
         // loop over the folders again to find docs
         $lookintodir = $path . "/" . $pubDomain;
         $subdirs = scandir($lookintodir);
         $lastVersion = [];
+        $ul = False;
         foreach ($subdirs as $subdir) {
             if ($subdir === '.' or $subdir === '..') continue;
-            echo "<ul>";
             if (is_dir($lookintodir . "/" . $subdir)) {
                 // TODO: order on types. If no def-, ... ..., then it could be a basedir
                 $docType="Laatste versie";
@@ -84,13 +114,21 @@ foreach ($pubDomains as $pubDomain) {
                   $cls="vv";
                 }
                 if ($docType=="Laatste versie" or (in_array(strtoupper($pubDomain), $publishAllList) and $docType="Definitieve versie")) {
+                  if ($ul == False) {
+                    echo "<ul>";
+                    $ul = True;
+                  }
                   echo "<li><span class='".$cls."'><a href='".$lookintodir . "/" . $subdir."'>".$docType.": ".$subdir."</a></span></li>";
                 }
             }
-            echo "</ul>";
+        }
+        if ($ul == True){
+          echo "</ul>";
+          $ul == False;
         }
     }
 }
 ?>
-</ul>
+
+<!-- </ul> -->
 </body>
