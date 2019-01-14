@@ -22,9 +22,34 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-// the full URL to the json file with the pubDomains per github repo
-$pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/master/config/pubDomainList.json';
 
-// configure the secret in GitHub's webhook
-$hubSecret = 'My secret';
+// Utility functions
+function rmdir_recursive($dir) {
+    foreach(scandir($dir) as $file) {
+        if ('.' === $file || '..' === $file) continue;
+        if (is_dir($dir.'/'.$file)) rmdir_recursive($dir.'/'.$file);
+        else unlink($dir.'/'.$file);
+    }
+    rmdir($dir);
+}
+
+function cpdir_recursive($src, $dst) {
+    // check if the src-dir exists
+    if (false === is_dir($src)) {
+      return false;
+    }
+    $dir = opendir($src);
+    @mkdir($dst);
+    while(false !== ( $file = readdir($dir)) ) {
+        if (( $file != '.' ) && ( $file != '..' )) {
+            if ( is_dir($src . '/' . $file)) {
+                cpdir_recursive($src . '/' . $file,$dst . '/' . $file);
+            }
+            else {
+                copy($src . '/' . $file, $dst . '/' . $file);
+            }
+        }
+    }
+    closedir($dir);
+}
 ?>
