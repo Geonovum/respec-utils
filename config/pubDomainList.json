@@ -7,6 +7,10 @@
       "repoName": "whitepaper-standaarden",
       "pubDomain": "wp",
       "shortName": "wpgs"
+  },{
+      "repoName": "HIM-Werkomgeving",
+      "pubDomain": "mim",
+      "shortName": "him"
   }],
   "thijsbrentjens": [{
       "repoName": "wfs-storedqueries",
