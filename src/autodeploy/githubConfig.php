@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 // the full URL to the json file with the pubDomains per github repo
-$pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/master/config/pubDomainList.json';
+$pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/master/src/autodeploy/config/pubDomainList.json';
 
 // configure the secret in GitHub's webhook
 $hubSecret = 'My secret';

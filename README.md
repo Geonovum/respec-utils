@@ -1,9 +1,9 @@
 # ReSpec utilities for Geonovum
 For publishing ReSpec documents on the Geonovum website https://docs.geostandaarden.nl a few ReSpec utilities have been created:
-1. automatically publish the document after a GitHub release has been made (using a webhook)
-1. creating an index page of published documents
+1. automatically publish the document after a GitHub release has been made (using a webhook), see directory ```src/autodeploy/```
+1. creating an index page of published documents, see ```src/www/index.php```
 
-## Automatically publish Respec docs
+## Autodeploy: Automatically publish Respec docs
 Originated from github issue https://github.com/Geonovum/respec/issues/148, this PHP script automatically publishes the ReSpec documents if a release is made on GitHub and updates the last version of the ReSpec document on https://docs.geostandaarden.nl. To use this method of publishing, the ReSpec document and the Github repo of the document have to meet some requirements. If these are not met, manual publication is the only option.
 
 ### Requirements for the publication server
