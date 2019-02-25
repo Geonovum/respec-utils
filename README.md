@@ -43,7 +43,7 @@ Example ```githubConfig.php``` file:
 ```
 <?php
 // the full URL to the json file with the pubDomains per github repo
-$pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/master/config/pubDomainList.json';
+$pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/master/src/autodeploy/config/pubDomainList.json';
 
 // configure the secret in GitHub's webhook
 $hubSecret = 'My secret';
@@ -58,7 +58,7 @@ For the Github repository:
 1. make sure the ReSpec document has it's **own, exclusive GitHub repository** and the document is in the root directory of the repository
     1. all media files (e.g. images) shall be placed in the directory ```./media/``` in the repository. This is the only directory that will be copied the publication server
 1. a webhook to the proper PHP page is created in the GitHub repository, for events of type ```release```. Go to the Settings of the repository and add a webhook:
-    1. set the Payload URL to the full URL of the ```releasecreated.php``` script
+    1. set the Payload URL to the full URL of the ```releasecreated.php``` script (ask the Geonovum ReSpec maintainers for this URL when setting up the webhook)
     1. content type ```application\x-www-form-urlencoded```
     1. make sure that the secret is set correctly (ask the Geonovum ReSpec maintainers for this secret when setting up the webhook)
     1. set individual events to: Releases (others won't be processed)
