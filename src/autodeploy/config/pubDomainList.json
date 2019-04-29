@@ -1,15 +1,23 @@
 {
   "Geonovum": [{
+      "repoName": "KP-APIs",
+      "pubDomain": "api",
+      "pubDomainTitle": "Kennisplatform APIs",
+      "shortName": "API-Strategie"
+  },{
       "repoName": "NEN3610-Linkeddata",
       "pubDomain": "nen3610",
+      "pubDomainTitle": "NEN3610-Linkeddata",
       "shortName": "nldp"
   },{
       "repoName": "whitepaper-standaarden",
       "pubDomain": "wp",
+      "pubDomainTitle": "Whitepaper Geostandaarden",
       "shortName": "wpgs"
   },{
       "repoName": "HIM-Werkomgeving",
       "pubDomain": "mim",
+      "pubDomainTitle": "MIM-Werkomgeving",
       "shortName": "him10"
   }],
   "thijsbrentjens": [{
