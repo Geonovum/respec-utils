@@ -1,25 +1,46 @@
 {
   "Geonovum": [{
-      "repoName": "KP-APIs",
-      "pubDomain": "api",
-      "pubDomainTitle": "Kennisplatform APIs",
-      "shortName": "API-Strategie"
-  },{
-      "repoName": "NEN3610-Linkeddata",
-      "pubDomain": "nen3610",
-      "pubDomainTitle": "NEN3610-Linkeddata",
-      "shortName": "nldp"
-  },{
-      "repoName": "whitepaper-standaarden",
-      "pubDomain": "wp",
-      "pubDomainTitle": "Whitepaper Geostandaarden",
-      "shortName": "wpgs"
-  },{
-      "repoName": "HIM-Werkomgeving",
-      "pubDomain": "mim",
-      "pubDomainTitle": "MIM-Werkomgeving",
-      "shortName": "him10"
-  }],
+        "repoName": "HIM-Werkomgeving",
+        "pubDomain": "mim",
+        "pubDomainTitle": "MIM-Werkomgeving",
+        "shortName": "him10"
+    },{
+        "repoName": "KP-APIs",
+        "pubDomain": "api",
+        "pubDomainTitle": "Kennisplatform APIs",
+        "shortName": "API-Strategie"
+    },{
+        "repoName": "",
+        "pubDomain": "kl",
+        "pubDomainTitle": "IMKL",
+        "shortName": "kl12"
+    },{
+        "repoName": "Metadata-ISO19115",
+        "pubDomain": "md",
+        "pubDomainTitle": "Metadata",
+        "shortName": "mdprofiel-iso19115"
+    },{
+        "repoName": "Metadata-ISO19119",
+        "pubDomain": "md",
+        "pubDomainTitle": "Metadata",
+        "shortName": "mdprofiel-iso19119"
+    },{
+        "repoName": "NEN3610-Linkeddata",
+        "pubDomain": "nen3610",
+        "pubDomainTitle": "NEN3610-Linkeddata",
+        "shortName": "nldp"
+    },{
+        "repoName": "",
+        "pubDomain": "ro",
+        "pubDomainTitle": "RO Standaarden",
+        "shortName": ""
+    },{
+        "repoName": "whitepaper-standaarden",
+        "pubDomain": "wp",
+        "pubDomainTitle": "Whitepaper Geostandaarden",
+        "shortName": "wpgs"
+    },
+  ],
   "thijsbrentjens": [{
       "repoName": "wfs-storedqueries",
       "pubDomain": "wfs",
