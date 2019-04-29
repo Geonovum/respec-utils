@@ -39,7 +39,7 @@
         "pubDomain": "wp",
         "pubDomainTitle": "Whitepaper Geostandaarden",
         "shortName": "wpgs"
-    },
+    }
   ],
   "thijsbrentjens": [{
       "repoName": "wfs-storedqueries",
