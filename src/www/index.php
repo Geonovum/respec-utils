@@ -17,7 +17,7 @@
     }
 
     .page {
-      width: 88rem;
+      max-width: 88rem;
       margin-left: auto;
       margin-right: auto;
       margin-top: 2rem;
@@ -37,13 +37,13 @@
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
         /*background-color: #f7f7f7;*/
         padding-left: 0.5em;
         border-bottom: 4px solid rgb(141, 182, 63);
         line-height: 4rem;
-        width: 32rem;
+        width: 34rem;
     }
 
     h3 {
@@ -92,6 +92,11 @@
       display: inline-grid;
     }
 
+    span.pubDomainAbbr{
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+
     ul.docs {
       border-bottom: 1px solid rgba(94, 94, 94, 0.2);
       width: 36rem;
@@ -106,7 +111,7 @@
 <h1>Standaarden en technische documenten</h1>
 <p>Op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a> publiceert Geonovum standaarden en technische documenten.</p>
 
-<p class="warning">Deze pagina is slechts een inhoudsopgave van documentatie die wij beheren. Ga naar de website van Geonovum voor toelichting op de documentatie.</p>
+<p class="warning">Deze pagina is slechts een inhoudsopgave van documentatie die wij beheren. Ga naar de <a href="https://www.geonovum.nl">website van Geonovum</a> voor toelichting op de documentatie.</p>
 <p>Onderstaande documenten zijn op dit moment beschikbaar:</p>
 
 <?php
@@ -141,6 +146,7 @@ function endsWith($haystack, $needle)
 
 function getPubDomainTitle($pubDomain, $allPubDomains)
 {
+  // default to pubdomain
   $title = strtoupper($pubDomain);
   foreach ($allPubDomains as $pd) {
     if ($pd['pubDomain'] == $pubDomain) {
@@ -149,7 +155,8 @@ function getPubDomainTitle($pubDomain, $allPubDomains)
       }
     }
   }
-  return $title;
+  $titleFull = "<span class='pubDomainAbbr'>(".strtolower($pubDomain).")</span>".$title;
+  return $titleFull;
 }
 
 function subDirsAsList($subdirs, $pubDomain, $lookintodir, $publishAllList)
