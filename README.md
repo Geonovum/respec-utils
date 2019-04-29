@@ -16,6 +16,7 @@ Originated from github issue https://github.com/Geonovum/respec/issues/148, this
     1. this list is important to make sure that existing other ReSpec documents are not (accidentally) overwritten.
     1. a publication domain is used as directory on the webserver
     1. the shortName of the ReSpec doc, to update the latest version copy
+    1. an optional title for the pubDomain, for the index at https://docs.geostandaarden.nl
 
 #### Example config files
 Example ```pubDomainList.json```, for 2 different github accounts, with several github repositories:
@@ -24,10 +25,12 @@ Example ```pubDomainList.json```, for 2 different github accounts, with several 
   "Geonovum": [{
       "repoName": "NEN3610-Linkeddata",
       "pubDomain": "nen3610",
+      "pubDomainTitle": "NEN3610-Linkeddata",
       "shortName": "nldp"
   },{
       "repoName": "whitepaper-standaarden",
       "pubDomain": "wp",
+      "pubDomainTitle": "Whitepaper Geostandaarden",
       "shortName": "wpgs"
   }],
   "thijsbrentjens": [{
