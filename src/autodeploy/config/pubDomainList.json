@@ -40,6 +40,11 @@
         "pubDomainTitle": "Services",
         "shortName": ""
     },{
+        "repoName": "IMVG",
+        "pubDomain": "vg",
+        "pubDomainTitle": "Informatiemodel Vastgoedgebruik",
+        "shortName": "imvg"
+    },{
         "repoName": "whitepaper-standaarden",
         "pubDomain": "wp",
         "pubDomainTitle": "Whitepaper Geostandaarden",
