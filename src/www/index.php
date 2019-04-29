@@ -7,55 +7,74 @@
     <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
     <!-- TODO: css to external doc and/or use geonovum css file -->
     <style>
+
     body {
       line-height: 1.5;
+      font-family: "Open Sans", sans-serif;
+      color: #5e5e5e;
+      font-size: .875rem;
+      line-height: 1.5;
+    }
 
-      font-family: sans-serif;
-
-      color: black;
-
-      width: 70rem;
-
+    .page {
+      width: 88rem;
       margin-left: auto;
-
       margin-right: auto;
-
-      font-size: 0.8rem;
-
       margin-top: 2rem;
     }
 
-    h1, h2 {
-      color: #005a9c;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Montserrat, "Open Sans", sans-serif;
     }
+
     h1 {
-      font-weight: bold;
-      margin: 0 0 .1em;
-      font-size: 220%;
+      margin: 1em 0 2em;
+      font-size: 1.25rem;
+      line-height: 4em;
+      border-bottom: 1px solid rgba(94,94,94,.2);
+      font-weight: 500;
     }
+
     h2 {
-      font-size: 140%;
-      background-color: #ddd;
-      padding-left: 0.5em;
+        font-size: 2rem;
+        font-weight: 500;
+        /*background-color: #f7f7f7;*/
+        padding-left: 0.5em;
+        border-bottom: 4px solid rgb(141, 182, 63);
+        line-height: 4rem;
+        width: 32rem;
     }
+
     h3 {
         margin-left: 1.8em;
+        font-weight: 500;
     }
+
     a {
       color: #005a9c;
     }
+
+    h2 > a {
+      text-decoration: none;
+      color: rgb(94,94,94);
+    }
+
     span.final, span.final a {
       font-weight: normal;
       color: #005a9c;
     }
+
     span.def, span.def a {
       color: #005a9c;
       /*font-size: 0.85em;*/
     }
+
     span.cv, span.cv a {
       color: orange;
       /*font-size: 0.85em;*/
     }
+
     span.vv, span.vv a {
       color: green;
       /*font-size: 0.85em;*/
@@ -67,22 +86,42 @@
       padding: 1em;
       margin: 1em;
     }
+
+    div.pubDomain {
+      width: 44rem;
+      display: inline-grid;
+    }
+
+    ul.docs {
+      border-bottom: 1px solid rgba(94, 94, 94, 0.2);
+      width: 36rem;
+      padding-bottom: 2rem;
+    }
+
     </style>
   </head>
 <body>
-<h1><img class="block-sitebranding__logo" src="https://www.geonovum.nl/logo.svg" alt="Home"> Standaarden en technische documenten</h1>
-<p>Op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a> zijn standaarden en technische documenten te vinden die Geonovum publiceert. </p>
+<div class="page">
+<img class="block-sitebranding__logo" src="https://www.geonovum.nl/logo.svg" alt="Home">
+<h1>Standaarden en technische documenten</h1>
+<p>Op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a> publiceert Geonovum standaarden en technische documenten.</p>
 
-<p class="warning">Deze pagina is slechts een inhoudsopgave van de documenten op <a href="https://docs.geostandaarden.nl/">https://docs.geostandaarden.nl/</a>. Op de website van <a href="https://www.geonovum.nl/">Geonovum</a> staan achtergronden en toelichtingen over de documenten.</p>
+<p class="warning">Deze pagina is slechts een inhoudsopgave van documentatie die wij beheren. Ga naar de website van Geonovum voor toelichting op de documentatie.</p>
 <p>Onderstaande documenten zijn op dit moment beschikbaar:</p>
-<!-- <ul> -->
 
 <?php
+$pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/master/src/autodeploy/config/pubDomainList.json';
 // directories to be ignored. Uppercase
 $ignoreList = ['BRO', 'NWBBGT', '.GIT'];
-
 // directories for which all files should be shown (containing PDFs instead of ReSpec docs)
 $publishAllList = ['G4W', 'KL', 'MIM', 'OOV','RO','SERV'];
+
+// -------------------------------
+// get the list of pubDomains:
+$pubDomainsJson = file_get_contents($pubDomainListURL);
+$pubDomainsArr = json_decode($pubDomainsJson, true);
+$allPubDomains = $pubDomainsArr['Geonovum'];
+// -------------------------------
 
 function startsWith($haystack, $needle)
 {
@@ -98,6 +137,19 @@ function endsWith($haystack, $needle)
     }
 
     return (substr($haystack, -$length) === $needle);
+}
+
+function getPubDomainTitle($pubDomain, $allPubDomains)
+{
+  $title = strtoupper($pubDomain);
+  foreach ($allPubDomains as $pd) {
+    if ($pd['pubDomain'] == $pubDomain) {
+      if (strlen($pd['pubDomainTitle']) > 0) {
+        $title = $pd['pubDomainTitle'];
+      }
+    }
+  }
+  return $title;
 }
 
 function subDirsAsList($subdirs, $pubDomain, $lookintodir, $publishAllList)
@@ -123,7 +175,7 @@ function subDirsAsList($subdirs, $pubDomain, $lookintodir, $publishAllList)
     // if ($docType=="Laatste versie" or (in_array(strtoupper($pubDomain), $publishAllList) and $docType="Definitieve versie")) {
     if ($docType=="Laatste versie" or (in_array(strtoupper($pubDomain), $publishAllList)) or $docType=="Definitieve versie") {
       if ($ul == False) {
-        $htmlList .= "<ul>";
+        $htmlList .= "<ul class='docs'>";
         $ul = True;
       }
       $htmlList .= "<li><span class='".$cls."'><a href='".$lookintodir . "/" . $subdir."'>".$docType.": ".$subdir."</a></span></li>";
@@ -136,6 +188,7 @@ function subDirsAsList($subdirs, $pubDomain, $lookintodir, $publishAllList)
   return $htmlList;
 }
 
+
 $path = '.';
 $pubDomains = scandir($path);
 
@@ -147,7 +200,7 @@ foreach ($pubDomains as $pubDomain) {
     $documentatie = [];
     $unknown = [];
     if (is_dir($path . '/' . $pubDomain) and !in_array(strtoupper($pubDomain), $ignoreList)) {
-        echo "<h2><a href='".$pubDomain."'>".strtoupper($pubDomain)."</a></h2>";
+        echo "<div class='pubDomain'><h2><a href='".$pubDomain."'>".getPubDomainTitle($pubDomain, $allPubDomains)."</a></h2>";
         // loop over the folders again to find docs
         $lookintodir = $path . "/" . $pubDomain;
         $subdirs = scandir($lookintodir);
@@ -215,9 +268,9 @@ foreach ($pubDomains as $pubDomain) {
           echo "<h3>Documentatie</h3>";
           echo subDirsAsList($documentatie, $pubDomain, $lookintodir, $publishAllList);
         }
+        echo "</div>";
     }
 }
 ?>
-
-<!-- </ul> -->
+</div>
 </body>

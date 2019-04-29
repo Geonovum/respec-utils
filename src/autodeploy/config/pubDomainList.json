@@ -35,6 +35,11 @@
         "pubDomainTitle": "RO Standaarden",
         "shortName": ""
     },{
+        "repoName": "",
+        "pubDomain": "serv",
+        "pubDomainTitle": "Services",
+        "shortName": ""
+    },{
         "repoName": "whitepaper-standaarden",
         "pubDomain": "wp",
         "pubDomainTitle": "Whitepaper Geostandaarden",
