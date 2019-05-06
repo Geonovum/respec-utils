@@ -40,6 +40,11 @@
         "pubDomainTitle": "Services",
         "shortName": ""
     },{
+        "repoName": "TPOD",
+        "pubDomain": "tpod",
+        "pubDomainTitle": "Standaarden Omgevingswet",
+        "shortName": ""
+    },{
         "repoName": "IMVG",
         "pubDomain": "vg",
         "pubDomainTitle": "Informatiemodel Vastgoedgebruik",
