@@ -239,6 +239,12 @@ foreach ($pubDomains as $pubDomain) {
                       case 'pr':
                           $toelichting[] = $subdir;
                           break;
+                      case 'al':
+                          $documentatie[] = $subdir;
+                          break;
+                      case 'bd':
+                          $documentatie[] = $subdir;
+                          break;
                       case 'hr':
                           $documentatie[] = $subdir;
                           break;
