@@ -56,9 +56,15 @@
         "shortName": "wpgs"
     }
   ],
-  "thijsbrentjens": [{
-      "repoName": "wfs-storedqueries",
-      "pubDomain": "wfs",
-      "shortName": "wfs-sq"
+  "BROprogramma": [{
+      "repoName": "GLD",
+      "pubDomain": "bro",
+      "pubDomainTitle": "Basisregistratie Ondergrond",
+      "shortName": "gld"
+  },{
+      "repoName": "GMN",
+      "pubDomain": "bro",
+      "pubDomainTitle": "Basisregistratie Ondergrond",
+      "shortName": "gmn"
   }]
 }
