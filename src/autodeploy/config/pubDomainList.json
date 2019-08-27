@@ -66,5 +66,10 @@
       "pubDomain": "bro",
       "pubDomainTitle": "Basisregistratie Ondergrond",
       "shortName": "gmn"
+  },{
+      "repoName": "GAR",
+      "pubDomain": "bro",
+      "pubDomainTitle": "Basisregistratie Ondergrond",
+      "shortName": "gar"
   }]
 }
