@@ -119,7 +119,7 @@ $pubDomainListURL = 'https://raw.githubusercontent.com/Geonovum/respec-utils/mas
 // directories to be ignored. Uppercase
 $ignoreList = ['BRO', 'NWBBGT', '.GIT'];
 // directories for which all files should be shown (containing PDFs instead of ReSpec docs)
-$publishAllList = ['G4W', 'KL', 'MIM', 'OOV','RO','SERV'];
+$publishAllList = ['G4W', 'KL', 'MIM', 'OOV', 'RO', 'SERV'];
 
 // -------------------------------
 // get the list of pubDomains:

@@ -60,11 +60,13 @@ For a ReSpec document to be published, the following requirements have to be met
 For the Github repository:
 1. make sure the ReSpec document has it's **own, exclusive GitHub repository** and the document is in the root directory of the repository
     1. all media files (e.g. images) shall be placed in the directory ```./media/``` in the repository. This is the only directory that will be copied the publication server
-1. a webhook to the proper PHP page is created in the GitHub repository, for events of type ```release```. Go to the Settings of the repository and add a webhook:
+1. a webhook to the proper PHP page is created in the GitHub repository, for events of type ```release```. Go to the Settings of the repository, then choose Webhooks in the left-side menu and add a webhook:
     1. set the Payload URL to the full URL of the ```releasecreated.php``` script (ask the Geonovum ReSpec maintainers for this URL when setting up the webhook)
     1. content type ```application\x-www-form-urlencoded```
     1. make sure that the secret is set correctly (ask the Geonovum ReSpec maintainers for this secret when setting up the webhook)
-    1. set individual events to: Releases (others won't be processed)
+    1. set the events that trigger the webhook:
+      1. choose "Let me select individual events", then
+      1. set individual events to: Releases (others won't be processed)
 
 Configure the domain and document shortname:
 1. make sure there is an entry in ```pubDomainList.json``` for the publication domain and the shortname of the document. Ask the Geonovum ReSpec maintainers to create this.
@@ -73,4 +75,4 @@ Configure the domain and document shortname:
 1. the document to publish on https://docs.geostandaarden.nl shall be a **snapshot** of the ReSpec document named ```snapshot.html``` in the root directory of the repo
     1. again: only images or other resources in the ```./media/```-directory will be copied
 1. create a new release (via Github's website)
-1. make sure that the tagname of the release is identical to the last part of the "This version" URL. E.g. ```cv-im-imvg-20180718```
+1. make sure that the tagname of the release is identical to the last part of the "This version" URL. E.g. ```cv-im-imvg-20180718```. Format: ```{status}-{type}-{shortName}-{date}```
