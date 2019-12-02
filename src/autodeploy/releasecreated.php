@@ -109,7 +109,7 @@ if ( $_POST['payload'] ) {
                   // make sure the new release dir is created and only copy the media-dir and rename the snapshot.html file to index.html. These are the only files allowed for Geonovum releases
                   mkdir($newDir, 0777, true);
                   cpdir_recursive($stagingDir.'/'.$result.'/media', $newDir.'/media');
-                  try
+                  try {
                     cpdir_recursive($stagingDir.'/'.$result.'/data/Images', $newDir.'/data/Images');
                   } catch (Exception $e) {
                       // not present probably
