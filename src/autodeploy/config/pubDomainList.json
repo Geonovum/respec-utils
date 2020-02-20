@@ -54,6 +54,11 @@
         "pubDomain": "wp",
         "pubDomainTitle": "Whitepaper Geostandaarden",
         "shortName": "wpgs"
+    },{
+        "repoName": "disgeo-demo",
+        "pubDomain": "disgeo",
+        "pubDomainTitle": "DisGeo",
+        "shortName": "dll"
     }
   ],
   "BROprogramma": [{
