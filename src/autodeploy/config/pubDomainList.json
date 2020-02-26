@@ -2,8 +2,13 @@
   "Geonovum": [{
         "repoName": "HIM-Werkomgeving",
         "pubDomain": "mim",
-        "pubDomainTitle": "MIM-Werkomgeving",
+        "pubDomainTitle": "Metamodel Informatie Modellering (MIM)",
         "shortName": "him10"
+    },{
+        "repoName": "MIM-Werkomgeving",
+        "pubDomain": "mim",
+        "pubDomainTitle": "Metamodel Informatie Modellering (MIM)",
+        "shortName": "mim"
     },{
         "repoName": "KP-APIs",
         "pubDomain": "api",
