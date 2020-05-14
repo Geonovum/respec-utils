@@ -64,6 +64,11 @@
         "pubDomain": "disgeo",
         "pubDomainTitle": "DisGeo",
         "shortName": "dll"
+    },{
+        "repoName": "IMG",
+        "pubDomain": "cvgg",
+        "pubDomainTitle": "Informatiemodel Geluid",
+        "shortName": "img"
     }
   ],
   "BROprogramma": [{
