@@ -60,10 +60,10 @@
         "pubDomainTitle": "Whitepaper Geostandaarden",
         "shortName": "wpgs"
     },{
-        "repoName": "disgeo-demo",
+        "repoName": "",
         "pubDomain": "disgeo",
         "pubDomainTitle": "DisGeo",
-        "shortName": "dll"
+        "shortName": ""
     },{
         "repoName": "IMG",
         "pubDomain": "cvgg",
