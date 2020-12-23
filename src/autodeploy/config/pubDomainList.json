@@ -69,6 +69,11 @@
         "pubDomain": "cvgg",
         "pubDomainTitle": "Informatiemodel Geluid",
         "shortName": "img"
+    },{
+        "repoName": "praktijkrichtlijn-vector-tiling",
+        "pubDomain": "serv",
+        "pubDomainTitle": "Praktijkrichtlijn Vector Tiling",
+        "shortName": "vt"
     }
   ],
   "BROprogramma": [{
