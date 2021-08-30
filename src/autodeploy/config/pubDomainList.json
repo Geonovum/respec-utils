@@ -47,7 +47,7 @@
     },{
         "repoName": "TPOD",
         "pubDomain": "tpod",
-        "pubDomainTitle": "Standaarden Omgevingswet",
+        "pubDomainTitle": "Toepassingsprofiel omgevingsdocumenten",
         "shortName": ""
     },{
         "repoName": "IMVG",
@@ -78,6 +78,11 @@
         "repoName": "",
         "pubDomain": "visu",
         "pubDomainTitle": "Visualisatie",
+        "shortName": ""
+    },{
+        "repoName": "OW",
+        "pubDomain": "ow",
+        "pubDomainTitle": "Standaarden omgevingswet",
         "shortName": ""
     }
   ],
