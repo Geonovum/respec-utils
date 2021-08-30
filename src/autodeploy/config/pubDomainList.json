@@ -74,6 +74,11 @@
         "pubDomain": "serv",
         "pubDomainTitle": "Praktijkrichtlijn Vector Tiling",
         "shortName": "vt"
+    },{
+        "repoName": "",
+        "pubDomain": "visu",
+        "pubDomainTitle": "Visualisatie",
+        "shortName": ""
     }
   ],
   "BROprogramma": [{
