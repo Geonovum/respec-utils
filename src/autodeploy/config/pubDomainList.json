@@ -84,6 +84,11 @@
         "pubDomain": "ow",
         "pubDomainTitle": "Standaarden omgevingswet",
         "shortName": ""
+    },{
+        "repoName": "IMOW",
+        "pubDomain": "imow",
+        "pubDomainTitle": "Informatiemodel Omgevingswet",
+        "shortName": "imow"
     }
   ],
   "BROprogramma": [{
