@@ -270,7 +270,7 @@ foreach ($pubDomains as $pubDomain) {
           echo subDirsAsList($unknown, $pubDomain, $lookintodir, $publishAllList);
         }
         if (count($norm) > 0) {
-          echo "<h3>Normen</h3>";
+          echo "<h3>Standaarden</h3>";
           echo subDirsAsList($norm, $pubDomain, $lookintodir, $publishAllList);
         }
         if (count($toelichting) > 0) {
