@@ -89,6 +89,11 @@
         "pubDomain": "tpod",
         "pubDomainTitle": "Informatiemodel Omgevingswet",
         "shortName": "imow"
+    },{
+        "repoName": "",
+        "pubDomain": "dso",
+        "pubDomainTitle": "Digitaal Stelsel Omgevingswet",
+        "shortName": ""
     }
   ],
   "BROprogramma": [{
