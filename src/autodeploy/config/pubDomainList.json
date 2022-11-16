@@ -95,46 +95,5 @@
         "pubDomainTitle": "Digitaal Stelsel Omgevingswet",
         "shortName": ""
     }
-  ],
-// "BROprogramma": [{
-//     "repoName": "GLD",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "gld"
-// },{
-//     "repoName": "GMN",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "gmn"
-// },{
-//     "repoName": "GAR",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "gar"
-// },{
-//     "repoName": "SFR",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "sfr"
-// },{
-//     "repoName": "BHR-G",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "bhr-g"
-// },{
-//     "repoName": "BHR-GT",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "bhr-gt"
-// },{
-//     "repoName": "BHR-P",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "bhr-p"
-// },{
-//     "repoName": "SAMPLE",
-//     "pubDomain": "bro",
-//     "pubDomainTitle": "Basisregistratie Ondergrond",
-//     "shortName": "bro-SAMPLE"
-// }]
+  ]
 }
