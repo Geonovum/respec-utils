@@ -94,6 +94,11 @@
         "pubDomain": "dso",
         "pubDomainTitle": "Digitaal Stelsel Omgevingswet",
         "shortName": ""
+    },{
+        "repoName": "raamwerk-geostandaarden",
+        "pubDomain": "rwgs",
+        "pubDomainTitle": "Raamwerk van Geo-standaarden",
+        "shortName": ""
     }
   ]
 }
