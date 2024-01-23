@@ -10,6 +10,11 @@
         "pubDomainTitle": "Metamodel Informatie Modellering (MIM)",
         "shortName": "him10"
     },{
+        "repoName": "HR-CRS-Gebruik",
+        "pubDomain": "crs",
+        "pubDomainTitle": "Coördinaatreferentiesystemen",
+        "shortName": "crs"
+    },{
         "repoName": "MIM-Werkomgeving",
         "pubDomain": "mim",
         "pubDomainTitle": "Metamodel Informatie Modellering (MIM)",
@@ -103,6 +108,16 @@
         "repoName": "raamwerk-geostandaarden",
         "pubDomain": "rwgs",
         "pubDomainTitle": "Raamwerk van Geo-standaarden",
+        "shortName": ""
+    },{
+        "repoName": "DSGO",
+        "pubDomain": "dsgo",
+        "pubDomainTitle": "Digitaal Stelsel Gebouwde Omgeving",
+        "shortName": "DSGO"
+    },{
+        "repoName": "wp-VerkenningDataspaces",
+        "pubDomain": "eu",
+        "pubDomainTitle": "Europese Unie,
         "shortName": ""
     }
   ]
