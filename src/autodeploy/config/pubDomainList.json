@@ -1,5 +1,10 @@
 {
   "Geonovum": [{
+        "repoName": "3dbasisvoorziening",
+        "pubDomain": "3dbv",
+        "pubDomainTitle": "3D basisvoorziening",
+        "shortName": "prod"
+    },{
         "repoName": "HIM-Werkomgeving",
         "pubDomain": "mim",
         "pubDomainTitle": "Metamodel Informatie Modellering (MIM)",
