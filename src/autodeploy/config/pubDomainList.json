@@ -25,7 +25,7 @@
         "pubDomainTitle": "Kennisplatform APIs",
         "shortName": "API-Strategie"
     },{
-        "repoName": "",
+        "repoName": "imkl",
         "pubDomain": "kl",
         "pubDomainTitle": "IMKL",
         "shortName": "kl12"
@@ -130,10 +130,10 @@
         "pubDomainTitle": "Geo-BAG",
         "shortName": "berichtenverkeer"
     },{
-        "repoName": "imev",
+        "repoName": "",
         "pubDomain": "imev",
         "pubDomainTitle": "Informatiemodel Externe Veiligheid",
-        "shortName": "imev"
+        "shortName": ""
     },{
         "repoName": "imka-scope",
         "pubDomain": "imka",
