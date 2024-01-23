@@ -119,6 +119,41 @@
         "pubDomain": "eu",
         "pubDomainTitle": "Europese Unie",
         "shortName": ""
+    },{
+        "repoName": "",
+        "pubDomain": "bgt",
+        "pubDomainTitle": "Basisregistratie grootschalige topografie",
+        "shortName": ""
+    },{
+        "repoName": "geobag",
+        "pubDomain": "geobag",
+        "pubDomainTitle": "Geo-BAG",
+        "shortName": "berichtenverkeer"
+    },{
+        "repoName": "imev",
+        "pubDomain": "imev",
+        "pubDomainTitle": "Informatiemodel Externe Veiligheid",
+        "shortName": "imev"
+    },{
+        "repoName": "imka-scope",
+        "pubDomain": "imka",
+        "pubDomainTitle": "Informatiemodel Klimaatadaptatie",
+        "shortName": "scope"
+    },{
+        "repoName": "IMLE",
+        "pubDomain": "imle",
+        "pubDomainTitle": "Informatiemodel en kwaliteitskader agrarische landschapselementen",
+        "shortName": ""
+    },{
+        "repoName": "wpungii",
+        "pubDomain": "ngii",
+        "pubDomainTitle": "Nederlandse Geo-informatie Infrastructuur",
+        "shortName": "wpungii"
+    },{
+        "repoName": "",
+        "pubDomain": "oov",
+        "pubDomainTitle": "Openbare orde en veiligheid",
+        "shortName": ""
     }
   ]
 }
