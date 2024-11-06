@@ -154,6 +154,11 @@
         "pubDomain": "oov",
         "pubDomainTitle": "Openbare orde en veiligheid",
         "shortName": ""
+    },{
+        "repoName": "",
+        "pubDomain": "3d",
+        "pubDomainTitle": "3D geo-informatie",
+        "shortName": ""
     }
   ]
 }
