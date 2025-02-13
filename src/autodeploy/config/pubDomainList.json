@@ -159,6 +159,11 @@
         "pubDomain": "3d",
         "pubDomainTitle": "3D geo-informatie",
         "shortName": ""
+    },{
+        "repoName": "",
+        "pubDomain": "ibro",
+        "pubDomainTitle": "Integrale Bronhouderregistratie",
+        "shortName": ""
     }
   ]
 }
