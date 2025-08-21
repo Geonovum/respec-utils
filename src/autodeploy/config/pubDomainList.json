@@ -164,6 +164,11 @@
         "pubDomain": "ibro",
         "pubDomainTitle": "Integrale Bronregistratie Objecten",
         "shortName": ""
+    },{
+        "repoName": "",
+        "pubDomain": "bro",
+        "pubDomainTitle": "Basisregistratie Ondergrond",
+        "shortName": ""
     }
   ]
 }
